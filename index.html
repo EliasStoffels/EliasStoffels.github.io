@@ -1,17 +1,122 @@
 <!DOCTYPE html>
-<html>
-    <style>
-body {background-color: darkslategray;}
-h1   {color: gold; margin-left: 5;}
-p    {color: white; margin-left: 5;}
-</style>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1em 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    .project {
+      margin: 10px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    }
+
+    .projects-grid a img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+    }
+
+    .projects-grid a:hover img {
+    transform: scale(1.03);
+    }
+
+  </style>
+</head>
 <body>
-    <div class="container">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <h1>About me</h1>
-        <p>I'm Elias Stoffels aspiring game dev currently studying at Howest Kortrijk.</p>
-    </div>
+
+  <header>
+    <h1>Elias Stoffels</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm Elias Stoffels an aspiring game dev currently studying at Howest Kortrijk</p>
+    </section>
+
+    <section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <a href="project1.html">
+      <img src="images/First_ever_game.png" alt="First ever game">
+    </a>
+    <a href="project2.html">
+      <img src="images/Engine_retro_game.png" alt="Engine & retro game">
+    </a>
+    <a href="project3.html">
+      <img src="images/current_project.png" alt="current project">
+    </a>
+
+  </div>
+</section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: Elias.Stoffels@gmail.com</p>
+      <p>GitHub: <a href="https://github.com/EliasStoffels" target="_blank">EliasStoffels</a></p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Elias Stoffels
+  </footer>
+
 </body>
 </html>
