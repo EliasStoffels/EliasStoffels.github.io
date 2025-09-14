@@ -60,10 +60,6 @@ body {
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
       transition: transform 0.2s ease;
     }
-
-    .projects-grid a:hover img {
-      transform: scale(1.03);
-    }
     
     .computer-languages-grid {
       display: flex;
@@ -87,5 +83,54 @@ body {
       height: 20px;
       width: auto;
     }
+
+    .project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.project-image {
+  position: relative;
+}
+
+.project-image img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.75);
+  color: white;
+  padding: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 0 0 8px 8px;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  margin: 0 0 5px;
+  font-size: 1.2em;
+}
+
+.overlay p {
+  margin: 0;
+  font-size: 0.9em;
+}
 
 
