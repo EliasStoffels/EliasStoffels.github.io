@@ -65,10 +65,11 @@ body {
     transform: scale(1.03);
     }
     
-    .languages-grid{
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
-      gap: 20px;
+    .languages-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
     }
 
     .languages-grid img {
