@@ -47,35 +47,45 @@ body {
     }
 
     .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
     }
 
     .projects-grid a img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    transition: transform 0.2s ease;
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
     }
 
     .projects-grid a:hover img {
-    transform: scale(1.03);
+      transform: scale(1.03);
     }
     
-    .languages-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    .computer-languages-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
     }
 
-    .languages-grid img {
+    .computer-languages-grid img {
       width: auto;
       height: 40px;
-      
+    }
+
+    .language-div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .language-div img {
+      height: 20px;
+      width: auto;
     }
 
 
