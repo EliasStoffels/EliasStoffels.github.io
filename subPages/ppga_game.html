@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+
+<div class="side-bar hidden"></div>
+<div class="header-bar">
+    <div class="header-bar-left">
+        <button class="header-bar-button" onclick="toggleSideBar()">
+            <img class="side-bar-icon" src="../css/icons/arrow.png">
+        </button>
+        <a class="header-bar-link" href="../index.html">
+            <img class="icon" src="../css/icons/home.png">
+        </a>
+    </div>
+    <div class="header-bar-middle">
+        <a class="header-bar-link" href="../documents/Resume.pdf" target="_blank"><img class="icon" src="../css/icons/resume.png"></a>
+        <a class="header-bar-link" href="mailto:elias.stoffels5752005@gmail.com"><img class="icon" src="../css/icons/mail.png"></a>
+        <a class="header-bar-link" href="https://github.com/EliasStoffels/GEOA_Game_Project"><img class="icon" src="../css/icons/github.png"></a>
+    </div>
+    <div class="header-bar-right">
+        <select class="header-bar-select" id="theme-select" onchange="ChangeTheme(this)"></select>
+    </div>
+</div>
+<div class="main-container" tabindex="-1">
+    <div class="section">
+        <h1 id="about">About</h1>
+        <p>Because of my interest in math and trying out new things, I took the PPGA course at DAE where I made a game using <a href="https://en.wikipedia.org/wiki/Plane-based_geometric_algebra">PPGA (Plane Based Geometric Algebra)</a> for movement instead of normal vector math.</p>
+        <p>All movement and rotation in this project is handled by mirroring the points over basis plains and their cross sections</p>
+        <p>For this project I used a <a href="https://github.com/fdlombae/GEOA-Game-Project">PPGA Math library</a> that handled basic PPGA types and operations</p>
+    </div>
+    <div class="section">
+        <h1 id="gameplay">Gameplay</h1>
+        <div class="video-container">
+            <video src="../videos/PPGA_game.mp4" autoplay="true" controls="" loop="false"></video>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<script type="module" src="../js/themes.js"></script>
+<script type="module" src="../js/sidebar.js"></script>

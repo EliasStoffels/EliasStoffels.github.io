@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+
+<div class="side-bar hidden"></div>
+<div class="header-bar">
+    <div class="header-bar-left">
+        <button class="header-bar-button" onclick="toggleSideBar()">
+            <img class="side-bar-icon" src="../css/icons/arrow.png">
+        </button>
+        <a class="header-bar-link" href="../index.html">
+            <img class="icon" src="../css/icons/home.png">
+        </a>
+    </div>
+    <div class="header-bar-middle">
+        <a class="header-bar-link" href="../documents/Resume.pdf" target="_blank"><img class="icon" src="../css/icons/resume.png"></a>
+        <a class="header-bar-link" href="mailto:elias.stoffels5752005@gmail.com"><img class="icon" src="../css/icons/mail.png"></a>
+        <a class="header-bar-link" href="https://github.com/EliasStoffels/Prog4EngineProject"><img class="icon" src="../css/icons/github.png"></a>
+    </div>
+    <div class="header-bar-right">
+        <select class="header-bar-select" id="theme-select" onchange="ChangeTheme(this)"></select>
+    </div>
+</div>
+<div class="main-container" tabindex="-1">
+    <div class="section">
+        <h1 id="about">About</h1>
+        <p>The arcade game Pengo remade in a custom engine written by me.</p>
+    </div>
+    <div class="section">
+        <h1 id="features">Features</h1>
+        <p>The game supports:</p>
+        <ul>
+            <li>Single player</li>
+            <li>Multiplayer co-op</li>
+            <li>Multiplayer versus</li>
+        </ul>
+
+        <p>While the engine supports:</p>
+        <ul>
+            <li>Keyboard and up to 4 gamepad inputs at the same time</li>
+            <li>Commands</li>
+            <li>Scene Loading</li>
+            <li>Multi-threaded sound system</li>
+            <li>GameObjects/Components</li>
+            <li>Event Listeners</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h1 id="gameplay">Gameplay</h1>
+        <div class="video-container">
+            <video src="../videos/engine_retro_game.mp4" autoplay="true" controls="" loop="false"></video>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<script type="module" src="../js/themes.js"></script>
+<script type="module" src="../js/sidebar.js"></script>

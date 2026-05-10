@@ -1,0 +1,89 @@
+{
+  "light": {
+    "--main-text-color": "#111827",
+    "--secondary-text-color": "#4B5563",
+    "--muted-text-color": "#6B7280",
+
+    "--main-background-color": "#F9FAFB",
+    "--surface-background-color": "#FFFFFF",
+    "--secondary-background-color": "#F3F4F6",
+    "--hover-background-color": "#E5E7EB",
+
+    "--main-border-color": "#D1D5DB",
+    "--subtle-border-color": "#E5E7EB",
+
+    "--primary-color": "#2563EB",
+    "--primary-hover-color": "#1D4ED8",
+    "--primary-text-color": "#FFFFFF",
+
+    "--accent-color": "#7C3AED",
+    "--success-color": "#16A34A",
+    "--warning-color": "#D97706",
+    "--danger-color": "#DC2626",
+
+    "--highlight-color": "#2563EB",
+    "--shadow-color": "rgba(0, 0, 0, 0.08)",
+
+    "--input-background-color": "#FFFFFF",
+    "--input-border-color": "#CBD5E1",
+    "--input-focus-color": "#3B82F6"
+  },
+  "dark": {
+    "--main-text-color": "#F9FAFB",
+    "--secondary-text-color": "#D1D5DB",
+    "--muted-text-color": "#9CA3AF",
+
+    "--main-background-color": "#0F172A",
+    "--surface-background-color": "#111827",
+    "--secondary-background-color": "#1F2937",
+    "--hover-background-color": "#374151",
+
+    "--main-border-color": "#374151",
+    "--subtle-border-color": "#2D3748",
+
+    "--primary-color": "#3B82F6",
+    "--primary-hover-color": "#60A5FA",
+    "--primary-text-color": "#FFFFFF",
+
+    "--accent-color": "#A78BFA",
+    "--success-color": "#22C55E",
+    "--warning-color": "#F59E0B",
+    "--danger-color": "#EF4444",
+
+    "--highlight-color": "#60A5FA",
+    "--shadow-color": "rgba(0, 0, 0, 0.4)",
+
+    "--input-background-color": "#1E293B",
+    "--input-border-color": "#475569",
+    "--input-focus-color": "#60A5FA"
+  },
+  "random": {
+    "--main-text-color": "",
+    "--secondary-text-color": "",
+    "--muted-text-color": "",
+
+    "--main-background-color": "",
+    "--surface-background-color": "",
+    "--secondary-background-color": "",
+    "--hover-background-color": "",
+
+    "--main-border-color": "",
+    "--subtle-border-color": "",
+
+    "--primary-color": "",
+    "--primary-hover-color": "",
+    "--primary-text-color": "",
+
+    "--accent-color": "",
+    "--success-color": "",
+    "--warning-color": "",
+    "--danger-color": "",
+
+    "--highlight-color": "",
+    "--shadow-color": "",
+
+    "--input-background-color": "",
+    "--input-border-color": "",
+    "--input-focus-color": ""
+  }
+}

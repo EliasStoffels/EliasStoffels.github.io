@@ -1,153 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Elias Stoffels</title>
-  <link rel='stylesheet' type='text/css' href='index.css'>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
-   <header>
-    <div class="button-row">
-      <div>
-      </div>
-    
-      <div>
-        <button onclick="window.open('https://github.com/EliasStoffels', '_blank')">Github</button>
-        <button onclick="window.open('images/Resume.pdf', '_blank')">Resume</button>
-      </div>
+<div class="side-bar hidden"></div>
+<div class="header-bar">
+    <div class="header-bar-left">
+        <button class="header-bar-button" onclick="toggleSideBar()">
+            <img class="side-bar-icon" src="css/icons/arrow.png">
+        </button>
+        <button class="header-bar-button" onclick="window.scrollTo(0,0)">
+            <img class="icon" src="css/icons/home.png">
+        </button>
     </div>
-  
-    <h1>Elias Stoffels</h1>
-  
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <div class="container">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I'm Elias Stoffels, an aspiring game developer currently studying Game Development at Howest Kortrijk.</p>
-      <p>I'm very interested in both Engine and Gameplay programming, hoping to land an internship for a related position coming fall. But I'm open for anything that peaks my interest.</p>
-    </section>
-
-    <section id="projects">
-  <h2>Finished Projects</h2>
-  <div class="projects-grid">
-     <div class="project-card">
-      <a href="engineRetroGame.html">
-        <div class="project-image">
-          <img src="images/Engine_retro_game.png" alt="Engine & retro game">
-          <div class="overlay">
-            <h3>Retro Game, Engine</h3>
-            <p>A remake of the arcade classic Pengo in a custom-built engine.</p>
-          </div>
-        </div>
-      </a>
+    <div class="header-bar-middle">
+        <a class="header-bar-link" href="documents/Resume.pdf" target="_blank"><img class="icon" src="css/icons/resume.png"></a>
+        <a class="header-bar-link" href="mailto:elias.stoffels5752005@gmail.com"><img class="icon" src="css/icons/mail.png"></a>
+        <a class="header-bar-link" href="https://github.com/EliasStoffels"><img class="icon" src="css/icons/github.png"></a>
     </div>
-
-     <div class="project-card">
-      <a href="jointed.html">
-        <div class="project-image">
-          <img src="images/Jointed.png" alt="Jointed">
-          <div class="overlay">
-            <h3>Jointed group project</h3>
-            <p>Vertical slice for group projects course at Howest</p>
-          </div>
-        </div>
-      </a>
+    <div class="header-bar-right">
+        <select class="header-bar-select" id="theme-select" onchange="ChangeTheme(this)"></select>
     </div>
-
-    <div class="project-card">
-      <a href="firstGame.html">
-        <div class="project-image">
-          <img src="images/First_ever_game.png" alt="First ever game">
-          <div class="overlay">
-            <h3>First Game</h3>
-            <p>My first game project</p>
-          </div>
-        </div>
-      </a>
-    </div>
-
-     <div class="project-card">
-      <a href="PPGAGame.html">
-        <div class="project-image">
-          <img src="images/PPGAGame.png" alt="Game Using PPGA">
-          <div class="overlay">
-            <h3>Game using PPGA</h3>
-            <p>A game made using PPGA</p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
- 
-  <h2>Ongoing Projects</h2>
-    <div class="projects-grid">
-    <div class="project-card">
-      <a href="QTProject.html">
-        <div class="project-image">
-          <img src="images/QT_ProjectZoomedOut.png" alt="current project">
-          <div class="overlay">
-            <h3>Current Project</h3>
-            <p>MusicPlayer using QT</p>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="project-card">
-      <a href="currentProject.html">
-        <div class="project-image">
-          <img src="images/current_project.png" alt="current project">
-          <div class="overlay">
-            <h3>Current Project</h3>
-            <p>Work in progress, Making my own engine using vulkan for rendering</p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section id="computer languages">
-  <h2>Coding Languages</h2>
-  <div class="computer-languages-grid">
-      <img src="images/CPP_Logo.svg" alt="cpp logo">
-      <img src="images/CSharp_Logo.png" alt="C# logo">
-      <img src="images/Python_Logo.png" alt="cpp logo">
-      <img src="images/HTML_Logo.png" alt="cpp logo">
-      <img src="images/CSS_Logo.png" alt="cpp logo">
-      <img src="images/SQL_Logo.webp" alt="cpp logo">
-  </div>
-</section>
-
-<section id="languages">
-  <h2>Languages</h2>
-    <div class="language-div">
-      <p>Dutch (mother tongue)</p>
-      <img src="images/Dutch_Flag.svg" alt="dutch flag">
-    </div>
-    <div class="language-div">
-      <p>English (fluent)</p>
-      <img src="images/English_Flag.svg" alt="dutch flag">
-    </div>
-    <div class="language-div">
-      <p>French (conversational)</p>
-      <img src="images/French_Flag.webp" alt="dutch flag">
-    </div>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: Elias.Stoffels5752005@gmail.com</p>
-  <p>GitHub: <a href="https://github.com/EliasStoffels" target="_blank">EliasStoffels</a></p>
-  <p>resume: <a href="images/Document 2.pdf" target="_blank">EliasStoffels</a></p>
-</section>
 </div>
+<div class="main-container" tabindex="-1">
+    <div class="section">
+        <h1 id="about-me">About me</h1>
+        <p>I'm Elias</p>
+    </div>
+    <div class="section">
+        <h1 id="Relevant-work-experience">Relevant work experience</h1>
+        <div class="auto-scale-container">
+            <a href="subPages/" class="project-card">
+                <img src="css/images/projects/dev_ops.png"/>
+            </a>
+        </div>
+    </div>
+    <div class="section">
+        <h1 id="projects">Projects</h1>
+        <div class="auto-scale-container">
+            <a href="subPages/engine_retro_game.html" class="project-card">
+                <img src="css/images/projects/Engine_retro_game.png"/>
+            </a>
+            <a href="subPages/ppga_game.html" class="project-card">
+                <img src="css/images/projects/PPGA_game.png"/>
+            </a>
+            <a href="subPages/first_ever_game.html" class="project-card">
+                <img src="css/images/projects/First_ever_game.png"/>
+            </a>
+            <a href="subPages/jointed.html" class="project-card">
+                <img src="css/images/projects/Jointed.png"/>
+            </a>
+        </div>
+    </div>
+    <div class="section">
+        <h1 id="tech-skills">Technical skills</h1>
+        <table class="contact-table">
+            <tr>
+                <td>Languages</td>
+                <td>c++, c#, Python, js, html, css</td>
+            </tr>
+            <tr>
+                <td>Frameworks</td>
+                <td>React, .NET</td>
+            </tr>
+            <tr>
+                <td>Game engines</td>
+                <td>Unity, Unreal, s&box</td>
+            </tr>
+            <tr>
+                <td>Source control</td>
+                <td>git, P4V</td>
+            </tr>
+            <tr>
+                <td>Development environment</td>
+                <td>Visual studio (code), Linux (ubuntu)</td>
+            </tr>
+            <tr>
+                <td>Other</td>
+                <td>PostgreSQL, Github actions, OpenUSD, grpc, docker(-compose)</td>
+            </tr>
+        </table>
+    </div>
+    <div class="section">
+        <h1 id="languages">Languages</h1>
+        <table class="contact-table">
+            <tr>
+                <td>Dutch</td>
+                <td>Mother tongue</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>Fluent</td>
+            </tr>
+            <tr>
+                <td>French</td>
+                <td>Conversational</td>
+            </tr>
+            <tr>
+                <td>German</td>
+                <td>Basics</td>
+            </tr>
+        </table>
+    </div>
+    <div class="section">
+        <h1 id="contacts">Contacts</h1>
+        <table class="contact-table">
+            <tr>
+                <th>Place</th>
+                <th>Contact</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><p>elias.stoffels575205@gmail.com</p></td>
+                <td><a href="mailto:elias.stoffels5752005@gmail.com"><img class="icon" src="css/icons/mail.png"></a></td>
+            </tr>
+            <tr>
+                <td>Github</td>
+                <td>EliasStoffels</td>
+                <td><a href="https://github.com/EliasStoffels"><img class="icon" src="css/icons/github.png"></a></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
 </body>
 </html>
+<script type="module" src="js/themes.js"></script>
+<script type="module" src="js/sidebar.js"></script>
