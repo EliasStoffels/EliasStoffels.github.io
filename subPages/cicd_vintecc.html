@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+
+<div class="side-bar hidden"></div>
+<div class="header-bar">
+    <div class="header-bar-left">
+        <button class="header-bar-button" onclick="toggleSideBar()">
+            <img class="side-bar-icon" src="../css/icons/arrow.png">
+        </button>
+        <a class="header-bar-link" href="../index.html">
+            <img class="icon" src="../css/icons/home.png">
+        </a>
+    </div>
+    <div class="header-bar-middle">
+        <a class="header-bar-link" href="../documents/Resume.pdf" target="_blank"><img class="icon" src="../css/icons/resume.png"></a>
+        <a class="header-bar-link" href="mailto:elias.stoffels5752005@gmail.com"><img class="icon" src="../css/icons/mail.png"></a>
+        <a class="header-bar-link" href="https://github.com/HowestDAE/dae16-EliasStoffels"><img class="icon" src="../css/icons/github.png"></a>
+    </div>
+    <div class="header-bar-right">
+        <select class="header-bar-select" id="theme-select" onchange="ChangeTheme(this)"></select>
+    </div>
+</div>
+<div class="main-container" tabindex="-1">
+    <div class="section">
+        <h1 id="about">About</h1>
+        <p>During my internship at <a href="https://www.vintecc.com/en" target="_blank">Vintec</a>, I created a GitHub Actions-integrated CI/CD pipeline for building, testing, releasing, and upgrading projects.
+            Due to project constraints, I implemented the pipeline without relying on GitHub's predefined actions.
+            I also developed a .NET dashboard with a PostgreSQL database to monitor the CI/CD pipeline and integrated Microsoft Azure Entra ID for SSO.</p>
+    </div>
+</div>
+
+</body>
+</html>
+<script type="module" src="../js/themes.js"></script>
+<script type="module" src="../js/sidebar.js"></script>

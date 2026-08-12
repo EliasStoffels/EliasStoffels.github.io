@@ -1,7 +1,7 @@
 const sideBar = document.querySelector(".side-bar");
 
 for(const header of document.querySelectorAll('h1')) {
-    sideBar.innerHTML += '<a href="#' + header.id + '" onclick="toggleSideBar()">' + header.innerHTML + '</a>';
+    sideBar.innerHTML += '<a class="side-bar-link" href="#' + header.id + '" onclick="toggleSideBar()">' + header.innerHTML + '</a>';
 }
 
 function toggleSideBar() {

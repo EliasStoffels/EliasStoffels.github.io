@@ -3,6 +3,9 @@ const themes = await response.json();
 const themeSelect = document.getElementById("theme-select");
 const darkModeMql = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
 
+for(const key in themes)
+    themeSelect.innerHTML += ("<option>"+ key +"</option>")
+
 if (darkModeMql && darkModeMql.matches) {
   SetTheme("dark");
   themeSelect.value = "dark"
@@ -13,9 +16,6 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', eve
     SetTheme(newColorScheme);
     themeSelect.value = newColorScheme;
 });
-
-for(const key in themes)
-    themeSelect.innerHTML += ("<option>"+ key +"</option>")
 
 function ChangeTheme(selectedObject)
 {
